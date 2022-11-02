@@ -5,8 +5,8 @@ import CustomButton from "../global/CustomButton";
 
 export default function Home() {
   return (
-    <div className="px-14 flex items-center justify-between w-full bg-green-500">
-      <FaChevronLeft className="text-6xl cursor-pointer" />
+    <div className="px-14 flex items-center justify-between w-full ">
+      <FaChevronLeft className="hover:animate-pulse text-6xl cursor-pointer" />
       <div className="flex flex-col items-center justify-center">
         <h2 className="font-semibold text-3xl">
           TOURE TRAVELS AND TOURS LIMITED
@@ -17,7 +17,7 @@ export default function Home() {
         </p>
         <CustomButton buttonTitle={"Book Now"} />
       </div>
-      <FaChevronRight className="text-6xl cursor-pointer" />
+      <FaChevronRight className="hover:animate-pulse text-6xl cursor-pointer" />
     </div>
   );
 }

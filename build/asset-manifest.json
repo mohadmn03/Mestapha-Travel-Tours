@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Mestapha-Travel-Tours/static/css/main.d9e48499.css",
+    "main.js": "/Mestapha-Travel-Tours/static/js/main.a7b54ba1.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Mestapha-Travel-Tours/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/Mestapha-Travel-Tours/index.html",
+    "main.d9e48499.css.map": "/Mestapha-Travel-Tours/static/css/main.d9e48499.css.map",
+    "main.a7b54ba1.js.map": "/Mestapha-Travel-Tours/static/js/main.a7b54ba1.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Mestapha-Travel-Tours/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9e48499.css",
+    "static/js/main.a7b54ba1.js"
+  ]
+}
