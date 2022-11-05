@@ -7,7 +7,11 @@ export default function Steps() {
   return (
     <div className="w-full px-14 pt-8 pb-24 flex flex-col items-center">
       <CustomHeading headerTitle={"Steps"} />
-      <img className="w-1/2 py-20" src={stepsImagrs} alt="" />
+      <img
+        className="w-full sm:w-4/5 lg:w-1/2 py-20"
+        src={stepsImagrs}
+        alt=""
+      />
       <CustomButton buttonTitle={"Book now"} />
     </div>
   );

@@ -16,7 +16,7 @@ export default function Navbar() {
       <ul className="flex gap-10">
         {links.map((link, i) => {
           return (
-            <li key={i} className="text-white">
+            <li key={i} className="text-white text-sm sm:text-base">
               <Link to={`${linkPath[i]}`}>{link}</Link>
             </li>
           );

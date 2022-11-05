@@ -1,0 +1,18 @@
+.swSl {
+  width: 340px;
+}
+.theForm {
+  display: "grid";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto 1fr;
+  grid-template-areas: ". ." ". ." "textArea textArea";
+}
+@media screen and (max-width: 540px) {
+  .swSl {
+    width: 240px;
+  }
+  .theForm {
+    display: flex;
+    flex-direction: column;
+  }
+}

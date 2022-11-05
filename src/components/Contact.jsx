@@ -7,6 +7,7 @@ import time from "../assets/time.png";
 import CustomHeading from "../global/CustomHeading";
 import CustomButton from "../global/CustomButton";
 import Form from "./Form";
+import Footer from "./Footer";
 
 export default function Contact() {
   const numbers = [
@@ -28,10 +29,10 @@ export default function Contact() {
       <Navbar />
       <div className="pt-8 pb-24 px-14">
         <div className="one flex justify-between items-center">
-          <img className="w-1/2" src={contactUsImg} alt="" />
+          <img className="w-1/2 hidden lg:block" src={contactUsImg} alt="" />
           <div className="oneTwo flex flex-col items-center justify-center justify-between">
             <CustomHeading headerTitle={"Contact Us"} />
-            <p className="w-2/3 py-10 text-center">
+            <p className="w-full sm:w-2/3 py-10 text-center">
               We Are Proud To Offer Umrah And Hajj Services, Quality And Comfort
               For The Guests Of Allah.
             </p>
@@ -40,7 +41,7 @@ export default function Contact() {
         </div>
       </div>
       {/*  */}
-      <div className="two bg-[#FE9F0D] w-full h-100 px-14 py-16 flex justify-evenly items-start">
+      <div className="two bg-[#FE9F0D] w-full h-100 px-14 py-16 flex flex-col items-center gap-10 md:gap-0 md:flex-row md:justify-evenly md:items-start">
         <div className="boxOne flex flex-col items-center justify-center">
           <img className="mb-2 w-14 h-14" src={call} alt="" />
           <div className="phoneNumbers">
@@ -81,12 +82,13 @@ export default function Contact() {
       {/*  */}
       <div className="emailUs flex flex-col items-center py-16 px-14">
         <CustomHeading headerTitle={"Email Us"} />
-        <p className="w-2/3 py-10 text-center w-[500px]">
+        <p className="w-full pt-10 pb-14 text-center sm:w-[500px]">
           We Are Proud To Offer Umrah And Hajj Services, Quality And Comfort For
           The Guests Of Allah.
         </p>
         <Form />
       </div>
+      <Footer />
     </div>
   );
 }

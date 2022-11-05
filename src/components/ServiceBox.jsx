@@ -8,7 +8,7 @@ export default function ServiceBox({
   btnFunction,
 }) {
   return (
-    <div className="bg-white text-black rounded-xl overflow-hidden text-center w-full h-[530px]">
+    <div className="bg-white text-black rounded-xl overflow-hidden text-center w-full h-[530px] cursor-pointer">
       <img src={imgPath} alt="" />
       <div className="p-6">
         <div className="p-6 rounded-t-xl relative -top-12 bg-white">
@@ -21,7 +21,7 @@ export default function ServiceBox({
           </p>
           <div className="w-10 h-px bg-black absolute top-[90%] left-[50%] translate-x-[-50%]"></div>
         </div>
-        <p className="mt-[-40px]">{lieuPara}</p>
+        <p className="mt-[-50px] sm:mt-[-40px]">{lieuPara}</p>
       </div>
       <a
         href={""}

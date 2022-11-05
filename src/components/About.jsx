@@ -11,6 +11,7 @@ import three from "../assets/gallery3.jpg";
 import four from "../assets/gallery4.jpg";
 import five from "../assets/gallery5.jpg";
 import six from "../assets/gallery6.jpg";
+import Footer from "./Footer";
 
 export default function About() {
   const [showGallery, setShowGallery] = useState(false);
@@ -38,21 +39,21 @@ export default function About() {
       )}
       <div className="pt-8 pb-24 px-14">
         <div className="one flex justify-between items-center">
-          <div className="oneTwo flex flex-col items-center justify-center justify-between">
+          <div className="oneTwo flex flex-col items-center lg:items-start xl:items-center  justify-between">
             <CustomHeading headerTitle={"About Us"} />
-            <p className="w-2/3 py-10 text-center">
+            <p className="w-full sm:w-2/3 py-10 text-center">
               We Are Proud To Offer Umrah And Hajj Services, Quality And Comfort
               For The Guests Of Allah.
             </p>
             <CustomButton buttonTitle={"some ketba"} />
           </div>
-          <img className="w-1/3" src={aboutUsPic} alt="" />
+          <img className="w-1/3 hidden lg:block" src={aboutUsPic} alt="" />
         </div>
       </div>
       {/*  */}
-      <div className="two bg-[#FE9F0D] w-full px-14 py-16 flex items-center">
-        <img className="h-80 rounded-sm" src={lazher} alt="" />
-        <div className="p-10">
+      <div className="two bg-[#FE9F0D] w-full px-14 py-16 flex flex-col items-start lg:items-center lg:flex-row">
+        <img className="w-full lg:h-80 rounded-sm" src={lazher} alt="" />
+        <div className="py-10 lg:p-10">
           <h2 className="font-bold text-3xl">Lazhar Nakch</h2>
           <h3 className="text-black font-bold">PRESEDANT O RUSSIAN REPUBLIC</h3>
           <p className="py-10">
@@ -61,7 +62,7 @@ export default function About() {
             moha lezhar jacob ki nemi zino 3atay fi ageria Lorem ki nemi moha
             lezhar jacob ki nemi zino 3atay fi ageria .
           </p>
-          <div className="flex justify-between items-center">
+          <div className="flex flex-col gap-5 sm:gap-0 sm:flex-row sm:justify-between sm:items-center">
             <div className="social flex gap-10">
               <FaFacebook
                 size={30}
@@ -145,6 +146,7 @@ export default function About() {
           />
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

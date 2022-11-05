@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Steps from "./components/Steps";
+import Footer from "./components/Footer";
 
 //
 function App() {
@@ -19,6 +20,8 @@ function App() {
         <Home />
       </div>
       <Steps />
+      {/*  */}
+      <Footer />
     </div>
   );
 }
